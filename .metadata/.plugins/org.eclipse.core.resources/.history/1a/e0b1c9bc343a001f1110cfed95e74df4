@@ -1,0 +1,74 @@
+package com.project.demo.services;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.entity.Patients;
+
+@Service
+public class DoctorServiceImpl implements DoctorService {
+	
+	
+	List<Doctors> list;
+	public DoctorServiceImpl() {
+		list=new ArrayList<>();
+		list.add(new Doctors(11343, "John Doe", "Noida", "ENT", "9999513459", "abcdabibijnjhiud"));
+		list.add(new Doctors(11345, "Johny Dep", "Delhi", "Orthopaedic", "8999513499", "abclnjnhjjndabcd"));
+		list.add(new Doctors(11341, "Jessica David", "Faridabad", "Gynecology", "9999534899", "abcdabnjhiufhd"));
+	}
+	
+
+	@Override
+	public List<Doctors> getDoctors() {
+		return list;
+	}
+
+	@Override
+	public Doctors getDoctor(int doctorID) {
+		// TODO Auto-generated method stub
+		Doctors d=null;
+		
+		for(Doctors doctor:list) {
+			
+			if(doctor.getID()==doctorID) {
+				d=doctor;
+				break;
+			}
+		}
+		return d;
+	}
+
+
+	@Override
+	public Doctors addDoctor(Doctors doctor) {
+		list.add(doctor);
+		return doctor;
+	}
+
+
+	@Override
+	public List<Doctors> findDoctor(Patients patient) {
+		// TODO Auto-generated method stub
+		
+		List<Doctors> dlist = null;
+		for(Doctors doctor:list) {
+			
+			if(doctor.getCity()==patient.getCity() && doctor.getSpeciality()==patient.getSymptoms()) {
+				dlist.add(doctor);
+				break;
+			}
+		}
+		
+		if (dlist==null) {
+			return null;
+		}
+		else {
+			return dlist;
+		}
+	}
+
+}

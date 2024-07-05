@@ -1,0 +1,15 @@
+package com.project.demo.services;
+
+import java.util.List;
+
+import com.project.demo.entity.Doctors;
+
+public class DoctorServiceImpl implements Doctorservice {
+
+	@Override
+	public List<Doctors> getDoctors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

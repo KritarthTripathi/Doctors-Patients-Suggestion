@@ -1,0 +1,5 @@
+package com.project.demo.repo;
+
+public interface Repositories {
+
+}

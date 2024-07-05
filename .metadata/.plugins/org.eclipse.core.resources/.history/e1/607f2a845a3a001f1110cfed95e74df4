@@ -1,0 +1,30 @@
+package com.project.demo.services;
+
+import java.util.List;
+
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.entity.Patients;
+
+
+public interface DoctorService {
+	
+	public List<Doctors> getDoctors();
+	
+	public Doctors getDoctor(Long doctorID);
+	
+	public Doctors addDoctor(Doctors doctor);
+	
+	public List<Doctors> findDoctor(Patients patient);
+	
+	public void deleteDoctor(Long doctorID);
+	
+	public List<Patients> getPatients();
+	
+	public Patients getPatient(Long patientID);
+	
+	public Patients addPatient(Patients patient);
+	
+	public void deletePatient(Long patientID);
+
+}

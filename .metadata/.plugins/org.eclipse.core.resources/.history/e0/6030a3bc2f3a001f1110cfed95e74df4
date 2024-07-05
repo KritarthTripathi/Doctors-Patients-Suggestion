@@ -1,0 +1,29 @@
+package com.project.demo.services;
+
+import java.util.List;
+
+import com.project.demo.entity.Patients;
+
+public class PatientServiceImpl implements PatientService {
+
+	@Override
+	public List<Patients> getPatients() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Patients getPatient(int patientID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Patients addPatient(Patients patient) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

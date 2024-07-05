@@ -1,0 +1,70 @@
+package com.project.demo.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="PatientsList")
+public class Patients {
+
+	@Id
+	private int PatientID;
+	private String Name;
+	private String City;
+	private String Symptoms;
+	private String Phone_number;
+	private String Email;
+	
+	public Patients(int patientID, String name, String city, String symptoms, String phone_number, String email) {
+		super();
+		PatientID = patientID;
+		Name = name;
+		City = city;
+		Symptoms = symptoms;
+		Phone_number = phone_number;
+		Email = email;
+	}
+	public Patients() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getPatientID() {
+		return PatientID;
+	}
+	public void setPatientID(int patientID) {
+		PatientID = patientID;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getCity() {
+		return City;
+	}
+	public void setCity(String city) {
+		City = city;
+	}
+	public String getSymptoms() {
+		return Symptoms;
+	}
+	public void setSymptoms(String symptoms) {
+		Symptoms = symptoms;
+	}
+	public String getPhone_number() {
+		return Phone_number;
+	}
+	public void setPhone_number(String phone_number) {
+		Phone_number = phone_number;
+	}
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	
+	
+}

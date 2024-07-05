@@ -1,0 +1,28 @@
+package com.project.demo.services;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+import com.project.demo.entity.Doctors;
+
+public class DoctorServiceImpl implements DoctorService {
+	
+	List<Doctors> list;
+	public DoctorServiceImpl() {
+		list=new ArrayList<>();
+		list.add(new Doctors(11343, "John Doe", "Noida", "ENT", "9999513459", "abcdabibijnjhiud"));
+		list.add(new Doctors(11345, "Johny Dep", "Delhi", "Orthopaedic", "8999513499", "abclnjnhjjndabcd"));
+		list.add(new Doctors(11347, "Johnas Doc", "Noida", "Orthopaedic", "8899513499", "abcdabjhihivncd"));
+		list.add(new Doctors(11349, "Jack Dennis", "Bangalore", "Dermatology", "9991013499", "abddhifhidhgabcd"));
+		list.add(new Doctors(11341, "Jessica David", "Noida", "Gynecology", "9999534899", "abcdabnjhiufhd"));
+	}
+
+
+	@Override
+	public List<Doctors> getDoctors() {
+		return list;
+	}
+
+
+}

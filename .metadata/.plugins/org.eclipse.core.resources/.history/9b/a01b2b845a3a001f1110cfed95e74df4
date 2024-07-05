@@ -1,0 +1,14 @@
+package com.project.demo.services;
+
+import java.util.List;
+
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.entity.Patients;
+
+
+public interface DoctorService {
+	
+	
+
+}

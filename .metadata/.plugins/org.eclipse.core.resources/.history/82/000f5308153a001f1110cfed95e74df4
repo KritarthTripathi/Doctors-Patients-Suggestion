@@ -1,0 +1,77 @@
+package com.project.demo.entity;
+
+public class Entities {
+	
+	import jakarta.persistence.*;
+	import jakarta.validation.constraints.Email;
+	import jakarta.validation.constraints.NotBlank;
+	import jakarta.validation.constraints.Pattern;
+	import jakarta.validation.constraints.Size;
+
+	@Entity
+	public class Doctor {
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+
+	    @NotBlank
+	    @Size(min = 3)
+	    private String name;
+
+	    @Enumerated(EnumType.STRING)
+	    private City city;
+
+	    @Email
+	    private String email;
+
+	    @Pattern(regexp = "\\d{10,}")
+	    private String phoneNumber;
+
+	    @Enumerated(EnumType.STRING)
+	    private Speciality speciality;
+
+	    // Getters and setters
+	}
+
+	public enum City {
+	    DELHI, NOIDA, FARIDABAD
+	}
+
+	public enum Speciality {
+	    ORTHOPAEDIC, GYNECOLOGY, DERMATOLOGY, ENT
+	}
+
+	@Entity
+	public class Patient {
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+
+	    @NotBlank
+	    @Size(min = 3)
+	    private String name;
+
+	    @Size(max = 20)
+	    private String city;
+
+	    @Email
+	    private String email;
+
+	    @Pattern(regexp = "\\d{10,}")
+	    private String phoneNumber;
+
+	    @Enumerated(EnumType.STRING)
+	    private Symptom symptom;
+
+	    // Getters and setters
+	}
+
+	public enum Symptom {
+	    ARTHRITIS, BACK_PAIN, TISSUE_INJURIES,
+	    DYSMENORRHEA,
+	    SKIN_INFECTION, SKIN_BURN,
+	    EAR_PAIN
+	}
+
+
+}

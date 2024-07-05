@@ -1,0 +1,11 @@
+package com.project.demo.services;
+
+import java.util.List;
+
+import com.project.demo.entity.Doctors;
+
+public interface DoctorService {
+	
+	public List<Doctors> getDoctors();
+
+}

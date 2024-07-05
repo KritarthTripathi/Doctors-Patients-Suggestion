@@ -1,0 +1,10 @@
+package com.project.demo.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface  DoctorRepository extends JpaRepository<Doctor, Long> {
+    List<Doctor> findByCityAndSpeciality(City city, Speciality speciality);
+}
+
+public interface PatientRepository extends JpaRepository<Patient, Long> {
+}

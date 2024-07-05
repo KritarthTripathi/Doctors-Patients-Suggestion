@@ -1,0 +1,12 @@
+package com.project.demo.services;
+
+import com.project.demo.entity.Patients;
+
+public interface PatientService {
+
+	public Patients addPatient(Patients patient);
+
+	public void removePatient(Long id);
+
+	public Patients findById(Long id);
+}

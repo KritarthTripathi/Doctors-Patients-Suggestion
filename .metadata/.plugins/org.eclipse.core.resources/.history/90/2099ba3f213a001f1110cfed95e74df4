@@ -1,0 +1,31 @@
+package com.project.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.services.Doctorservice;
+
+@RestController
+public class DPController {
+	
+	@Autowired
+	private Doctorservice doctorService;
+	
+	@GetMapping("/home")
+	public String home() {
+		return "start at home";
+	}
+	
+	//Get the doctor's details
+	@GetMapping("/get_doctor")
+	public List<Doctors> getDoctors(){
+		
+		return this.doctorService.getDoctors();
+	}
+	
+}

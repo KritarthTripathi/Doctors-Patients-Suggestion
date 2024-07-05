@@ -1,0 +1,63 @@
+package com.project.demo.services;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.entity.Patients;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+	
+	
+	List<Patients> plist;
+	public PatientServiceImpl() {
+		plist=new ArrayList<>();
+		plist.add(new Patients(99343, "Aman Sharma", "Noida", "Back Pain", "99900000459", "zdrcdabibijnjhiud"));
+		plist.add(new Patients(99345, "Jai Gupta", "Delhi", "Ear Pain", "89000003499", "yuizlnjnhjjndabcd"));
+		plist.add(new Patients(99341, "Deepak Kumar", "Faridabad", "Skin Infection", "9999000009", "xyuzdabnjhiufhd"));
+	}
+
+	@Override
+	public List<Patients> getPatients() {
+		// TODO Auto-generated method stub
+		return plist;
+	}
+
+	@Override
+	public Patients getPatient(int patientID) {
+		// TODO Auto-generated method stub
+		Patients p=null;
+		
+		
+		for(Patients patient:plist) {
+			
+			if(patient.getPatientID()==patientID) {
+				p=patient;
+				break;
+			}
+		}
+		return p;
+		
+	}
+
+	@Override
+	public Patients addPatient(Patients patient) {
+		// TODO Auto-generated method stub
+		plist.add(patient);
+		return patient;
+	}
+
+	@Override
+	public void deletePatient(int patientID) {
+		// TODO Auto-generated method stub
+		plist=this.plist.stream().filter(e->e.getPatientID()!=patientID).collect(Collectors.toList());
+		
+	}
+
+	
+
+}

@@ -1,0 +1,14 @@
+package com.project.demo.entity;
+
+public class Entities {
+	
+	
+
+}
+
+public enum City{ 
+	Delhi, Noida, Mumbai
+}
+public enum Speciality{ 
+	ORTHOPAEDIC, GYNECOLOGY, DERMATOLOGY, ENT
+}

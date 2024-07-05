@@ -1,0 +1,63 @@
+package com.project.demo.services;
+
+import com.project.demo.edgehandler.NoDoctorsAvailableException;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.project.demo.entity.Doctors;
+import com.project.demo.entity.Doctors.Speciality;
+import com.project.demo.entity.Patients;
+import com.project.demo.entity.Patients.Symptom;
+import com.project.demo.repo.DoctorRepository;
+
+
+@Service
+public class DoctorServiceImpl implements DoctorService{
+	
+	@Autowired
+	private DoctorRepository doctorRepository;
+	
+	 @Override
+	    public List<Doctors> getAllDoctors() {
+	        return doctorRepository.findAll();
+	    }
+	public Doctors addDoctor(Doctors doctor) {
+        return doctorRepository.save(doctor);
+    }
+
+    public void removeDoctor(Long id) {
+        doctorRepository.deleteById(id);
+    }
+
+    public List<Doctors> suggestDoctors(Patients patient){
+        Speciality speciality = mapSymptomToSpeciality(patient.getSymptom());
+        List<Doctors> doctors = doctorRepository.findByCityAndSpeciality(patient.getCity(), speciality);
+        if (doctors.isEmpty()) {
+            throw new NoDoctorsAvailableException("There isn’t any doctor present at your location for your symptom");
+        }
+        return doctors;
+    }
+	
+    public Speciality mapSymptomToSpeciality(Symptom symptom) {
+        switch (symptom) {
+            case ARTHRITIS:
+            case BACK_PAIN:
+            case TISSUE_INJURIES:
+                return Speciality.ORTHOPAEDIC;
+            case DYSMENORRHEA:
+                return Speciality.GYNECOLOGY;
+            case SKIN_INFECTION:
+            case SKIN_BURN:
+                return Speciality.DERMATOLOGY;
+            case EAR_PAIN:
+                return Speciality.ENT;
+            default:
+                throw new IllegalArgumentException("Invalid symptom");
+        }
+    }
+
+
+}

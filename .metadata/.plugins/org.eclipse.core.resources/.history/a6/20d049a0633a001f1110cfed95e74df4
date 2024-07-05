@@ -1,0 +1,5 @@
+package com.project.demo.edgehandler;
+
+public class NoDoctorsAvailableException {
+
+}

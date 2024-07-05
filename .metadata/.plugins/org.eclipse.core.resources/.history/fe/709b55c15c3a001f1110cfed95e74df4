@@ -1,0 +1,48 @@
+package com.project.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.yaml.snakeyaml.util.EnumUtils;
+import com.project.demo.edgehandler.CustomExceptionHandler.*;
+
+import com.project.demo.entity.Doctors.City;
+import com.project.demo.entity.Patients;
+import com.project.demo.repo.DoctorRepository;
+import com.project.demo.repo.PatientRepository;
+import com.project.demo.services.DoctorService;
+import com.project.demo.services.PatientService;
+
+@RestController
+@RequestMapping("/api")
+public class PDController {
+    @Autowired
+    private PatientService patientService;
+    @Autowired
+    private DoctorService doctorService;
+
+    @PostMapping("/patients")
+    public Patients addPatient(@RequestBody Patients patient) {
+        return patientService.addPatient(patient);
+    }
+
+    @DeleteMapping("/patients/{id}")
+    public void removePatient(@PathVariable Long id) {
+        patientService.removePatient(id);
+    }
+
+    @GetMapping("/patients/{id}/suggest-doctors")
+    public List<Doctors> suggestDoctors(@PathVariable Long id) {
+        Patients patient = patientService.findById(id)
+                .orElseThrow(() -> new PatientNotFoundException("Patient not found"));
+        if (!EnumUtils.isValidEnum(City.class, patient.getCity().toUpperCase())) {
+            throw new NoDoctorsAvailableException("We are still waiting to expand to your location");
+        }
+        return doctorService.suggestDoctors(patient);
+    }
+}

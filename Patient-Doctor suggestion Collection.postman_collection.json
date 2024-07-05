@@ -1,0 +1,1612 @@
+{
+	"info": {
+		"_postman_id": "8ca077c6-90f4-48b7-85be-c18f678e5f37",
+		"name": "Patient-Doctor suggestion Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36758054"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Aisha Sharma\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"aishas@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Arnav Gupta\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"arnavg@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Neha Patel\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"nehap@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rohit Verma\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"rohitv@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Ananya Singh\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"ananyas@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Yash Kapoor\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"yashk@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Riya Sharma\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"riyas@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rohan Gupta\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"rohang@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Meera Singh\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"meeras@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Ajay Kumar\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"ajayk@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Simran Patel\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"simranp@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Arjun Sharma\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"arjuns@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Natasha Gupta\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"natashag@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rajesh Singh\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"rajeshs@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Anushka Kapoor\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"anushkak@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Vivek Reddy\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"vivekr@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Sanya Sharma\",\r\n    \"city\": \"DELHI\",\r\n    \"email\": \"sanyas@example.com\",\r\n    \"phoneNumber\": \"9987654321\",\r\n    \"speciality\": \"GYNECOLOGY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Manoj Kumar\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"manojk@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Priyanka Patel\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"priyankap@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Anand Verma\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"anandv@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Pooja Singh\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"poojas@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rohit Kapoor\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"rohitk@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Anuj Sharma\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"anujs@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"DERMATOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Kavita Gupta\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"kavitag@example.com\",\r\n        \"phoneNumber\": \"9998765432\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rakesh Patel\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"rakeshp@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Nandini Verma\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"nandiniv@example.com\",\r\n        \"phoneNumber\": \"9965432109\",\r\n        \"speciality\": \"ENT\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Priya Sharma\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"priyas@example.com\",\r\n        \"phoneNumber\": \"9987654321\",\r\n        \"speciality\": \"GYNECOLOGY\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Dr. Rahul Kapoor\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"rahulk@example.com\",\r\n        \"phoneNumber\": \"9976543210\",\r\n        \"speciality\": \"ORTHOPAEDIC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Alice Smith\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"alice.smith@example.com\",\r\n        \"phoneNumber\": \"0978654321\",\r\n        \"symptom\": \"ARTHRITIS\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Bob Johnson\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"bob.johnson@example.com\",\r\n        \"phoneNumber\": \"0987123456\",\r\n        \"symptom\": \"BACK_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Catherine Brown\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"catherine.brown@example.com\",\r\n        \"phoneNumber\": \"0965432109\",\r\n        \"symptom\": \"TISSUE_INJURIES\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"David Lee\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"david.lee@example.com\",\r\n        \"phoneNumber\": \"0978123456\",\r\n        \"symptom\": \"DYSMENORRHEA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Divya Kapoor\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"divya.kapoor@example.com\",\r\n        \"phoneNumber\": \"0978123456\",\r\n        \"symptom\": \"EAR_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Chirag Desai\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"chirag.desai@example.com\",\r\n        \"phoneNumber\": \"0965432109\",\r\n        \"symptom\": \"SKIN_INFECTION\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Bina Mehta\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"bina.mehta@example.com\",\r\n        \"phoneNumber\": \"0987123456\",\r\n        \"symptom\": \"DYSMENORRHEA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Amit Joshi\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"amit.joshi@example.com\",\r\n        \"phoneNumber\": \"0978654321\",\r\n        \"symptom\": \"TISSUE_INJURIES\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Zara Khan\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"zara.khan@example.com\",\r\n        \"phoneNumber\": \"0967123456\",\r\n        \"symptom\": \"BACK_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Yash Sharma\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"yash.sharma@example.com\",\r\n        \"phoneNumber\": \"0987654321\",\r\n        \"symptom\": \"ARTHRITIS\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Xavier Mistry\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"xavier.mistry@example.com\",\r\n        \"phoneNumber\": \"0978123456\",\r\n        \"symptom\": \"EAR_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Winston Zaveri\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"winston.zaveri@example.com\",\r\n        \"phoneNumber\": \"0965432109\",\r\n        \"symptom\": \"SKIN_INFECTION\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Vani Rao\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"vani.rao@example.com\",\r\n        \"phoneNumber\": \"0987123456\",\r\n        \"symptom\": \"DYSMENORRHEA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Uday Gupta\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"uday.gupta@example.com\",\r\n        \"phoneNumber\": \"0978654321\",\r\n        \"symptom\": \"TISSUE_INJURIES\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Thomas Green\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"thomas.green@example.com\",\r\n        \"phoneNumber\": \"0987123456\",\r\n        \"symptom\": \"BACK_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Sophia Walker\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"sophia.walker@example.com\",\r\n        \"phoneNumber\": \"0978654321\",\r\n        \"symptom\": \"ARTHRITIS\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ryan Allen\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"ryan.allen@example.com\",\r\n        \"phoneNumber\": \"0967123456\",\r\n        \"symptom\": \"EAR_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Quinn Davis\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"quinn.davis@example.com\",\r\n        \"phoneNumber\": \"0987654321\",\r\n        \"symptom\": \"SKIN_INFECTION\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Patrick Harris\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"patrick.harris@example.com\",\r\n        \"phoneNumber\": \"0978123456\",\r\n        \"symptom\": \"DYSMENORRHEA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Olivia Young\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"olivia.young@example.com\",\r\n        \"phoneNumber\": \"0965432109\",\r\n        \"symptom\": \"TISSUE_INJURIES\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Nathan Hall\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"nathan.hall@example.com\",\r\n        \"phoneNumber\": \"0987123456\",\r\n        \"symptom\": \"BACK_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Mia Thompson\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"mia.thompson@example.com\",\r\n        \"phoneNumber\": \"0978654321\",\r\n        \"symptom\": \"ARTHRITIS\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Liam Martin\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"liam.martin@example.com\",\r\n        \"phoneNumber\": \"0967123456\",\r\n        \"symptom\": \"EAR_PAIN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Kelly Harris\",\r\n        \"city\": \"DELHI\",\r\n        \"email\": \"kelly.harris@example.com\",\r\n        \"phoneNumber\": \"0987654321\",\r\n        \"symptom\": \"SKIN_INFECTION\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"James Taylor\",\r\n        \"city\": \"NOIDA\",\r\n        \"email\": \"james.taylor@example.com\",\r\n        \"phoneNumber\": \"0978123456\",\r\n        \"symptom\": \"DYSMENORRHEA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Isabella White\",\r\n        \"city\": \"FARIDABAD\",\r\n        \"email\": \"isabella.white@example.com\",\r\n        \"phoneNumber\": \"0965432109\",\r\n        \"symptom\": \"TISSUE_INJURIES\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/alldoctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/alldoctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"alldoctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/allpatients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/allpatients",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"allpatients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/12/suggest-doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/12/suggest-doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"12",
+						"suggest-doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/18/suggest-doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/18/suggest-doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"18",
+						"suggest-doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/13/suggest-doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/13/suggest-doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"13",
+						"suggest-doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/11/suggest-doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/api/11/suggest-doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"11",
+						"suggest-doctors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
